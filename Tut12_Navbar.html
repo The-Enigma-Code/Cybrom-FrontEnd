@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .container{
+            /* border: 4px solid red; */
+        }
+        .navbar{
+            /* border: 4px solid rgb(14, 44, 99); */
+            display: flex;
+            justify-content: space-between;
+            /* height: 14vh; */
+            padding: 0vh 2vh;
+            flex-wrap: wrap;
+            align-items: center;
+            /* margin: 0vh 2vh; */
+            background-color: #1E1E1E;
+            color: white;
+            border: 4px solid rgb(199, 168, 12);
+            border-radius: 10vh;
+        }
+        .navoptions{
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: space-evenly; */
+            gap: 10vh;
+            list-style: none;
+            /* border: 3px solid rgb(14, 197, 26); */
+        }
+        .navoptions li{
+            background-color: #FFA409;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+            /* color: aliceblue; */
+            padding: 1vh;
+            font-weight: bold;
+            font-size: 3vh;
+            border-radius: 5vh;
+        }
+        .navbar div img{
+            height: 12vh;
+            width: 12vh;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+        }
+        .logo h1{
+           color:#FFA409;
+           font-size: 3vh;
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+           text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="container">
+        <nav class="navbar">
+            
+            <div class="logo"> <img src="./Exercises/pngwing.com.png" alt=""><h1>MANGO</h1></div>
+            <ul class="navoptions">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </section>
+</body>
+</html>
