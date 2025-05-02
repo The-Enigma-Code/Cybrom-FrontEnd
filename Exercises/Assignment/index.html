@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Crypto Market</title>
+  <!-- google-fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cal+Sans&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- google-material-icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&
+   icon_names=currency_bitcoin,currency_exchange,groups,home,notifications,sync_alt" />
+  <!-- font-awsome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- root css -->
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="main">
+
+    <section class="nav-container">
+      <nav class="navbar">
+        <ul class="nav-items nav-left">
+          <li id="name-logo"><span>
+            <img class="logo" src="./mylogo.png" alt="">
+          </span> <span>
+              <h2>&nbsp; NIK CYRPTO</h2>
+            </span>
+          </li>
+          <li id="nav-pipe">|</li>
+          <li> <span>Home</span>
+            <span class="material-symbols-outlined left-nav-icons">home<span></span>
+          </li>
+          <li><span>Cryptocurrencies</span>
+            <i class="fa-solid fa-coins left-nav-icons fontawsome"></i>
+          </li>
+          <li>
+            <span>Exchange</span>
+            <span class="material-symbols-outlined left-nav-icons">sync_alt<span>
+          </li>
+
+
+          <li>
+            <span>Community</span>
+            <span class="material-symbols-outlined left-nav-icons">groups<span>
+          </li>
+          <li>
+            <span>Converter</span>
+            <span class="material-symbols-outlined left-nav-icons">currency_exchange</span>
+          </li>
+
+        </ul>
+        <ul class="nav-items nav-right">
+          <li>
+            <i class="fa-regular fa-bell right-nav-icons fontawsome"></i>
+          </li>
+          <li><input id="search-box" type="search" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass fontawsome right-nav-icons"></i>
+          </li>
+
+          <li>
+            <i class="fa-brands fa-x-twitter fontawsome right-nav-icons"></i>&nbsp;
+            <i class="fa-brands fa-linkedin fontawsome right-nav-icons"></i>
+          </li>
+        </ul>
+      </nav>
+
+    </section>
+    <section class="home main-section">
+      <h2>Home</h2>
+      
+      </section>
+      <section class="Currencies main-section">
+      <!-- <h2>Currencies</h2> -->
+      <table class="currencies-table">
+        <thead>
+          <tr>
+            <th class="table-srno">#</th>
+            <th id="thead-name">Name</th>
+            <th>Price</th>
+            <th>1h%</th>
+            <th>24h%</th>
+            <th>7d%</th>
+            <th>Market Cap</th>
+            <th>Volume</th>
+            <th>Circulating Supply</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="table-srno">1</td>
+            <td class="crypto-name-img"> <img class="crypto-logo" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png" alt=""><span>Bitcoin (BTC)</span></td>
+            <td>$94,766.49</td>
+            <td>0.05%</td>
+            <td>0.23%</td>
+            <td>-1.21%</td>
+            <td>$1,881,068,046,514</td>
+            <td>$23,456,789,012</td>
+            <td>19,859,837 BTC</td>
+          </tr>
+          <tr>
+            <td class="table-srno">2</td>
+            <td class="crypto-name-img"><img class="crypto-logo" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png" alt=""><span>Ethereum (ETH)</span></td>
+            <td>$1,800.67</td>
+            <td>0.03%</td>
+            <td>0.15%</td>
+            <td>-2.34%</td>
+            <td>$217,248,182,825</td>
+            <td>$12,345,678,901</td>
+            <td>120,587,321 ETH</td>
+          </tr>
+          <tr>
+            <td class="table-srno">3</td>
+            <td class="crypto-name-img"><img class="crypto-logo" src="https://s2.coinmarketcap.com/static/img/coins/64x64/825.png" alt=""><span>Tether (USDT)</span></td>
+            <td>$1.00</td>
+            <td>0.01%</td>
+            <td>0.01%</td>
+            <td>0.00%</td>
+            <td>$148,019,445,760</td>
+            <td>$45,678,901,234</td>
+            <td>148,019,445,760 USDT</td>
+          </tr>
+          <tr>
+            <td class="table-srno">4</td>
+            <td class="crypto-name-img"><img class="crypto-logo" src="https://s2.coinmarketcap.com/static/img/coins/64x64/52.png" alt=""><span>XRP (XRP)</span></td>
+            <td>$2.23</td>
+            <td>0.45%</td>
+            <td>1.23%</td>
+            <td>-3.45%</td>
+            <td>$130,882,232,896</td>
+            <td>$5,678,901,234</td>
+            <td>58,693,871,211 XRP</td>
+          </tr>
+          <tr>
+            <td class="table-srno">5</td>
+            <td class="crypto-name-img"><img class="crypto-logo" src="https://s2.coinmarketcap.com/static/img/coins/64x64/5426.png" alt=""><span>Solana (SOL)</span></td>
+            <td>$146.41</td>
+            <td>0.21%</td>
+            <td>0.56%</td>
+            <td>-2.11%</td>
+            <td>$75,951,998,926</td>
+            <td>$3,456,789,012</td>
+            <td>518,693,871 SOL</td>
+          </tr>
+          <tr>
+            <td class="table-srno">6</td>
+            <td class="crypto-name-img"><img class="crypto-logo" src="https://s2.coinmarketcap.com/static/img/coins/64x64/3408.png" alt=""><span>USD Coin (USDC)</span></td>
+            <td>$0.99</td>
+            <td>0.01%</td>
+            <td>0.01%</td>
+            <td>0.00%</td>
+            <td>$61,742,131,269</td>
+            <td>$2,345,678,901</td>
+            <td>62,365,813,131 USDC</td>
+          </tr>
+          <tr>
+            <td class="table-srno">7</td>
+            <td class="crypto-name-img"> <img class="crypto-logo" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1839.png" alt=""><span>Binance Coin (BNB)</span></td>
+            <td>$601.26</td>
+            <td>0.15%</td>
+            <td>0.34%</td>
+            <td>-1.56%</td>
+            <td>$84,842,324,265</td>
+            <td>$1,234,567,890</td>
+            <td>141,137,871 BNB</td>
+          </tr>
+          <tr>
+            <td class="table-srno" >8</td>
+            <td class="crypto-name-img"><img class="crypto-logo" src="https://s2.coinmarketcap.com/static/img/coins/64x64/74.png" alt=""><span>Dogecoin (DOGE)</span></td>
+            <td>$0.15</td>
+            <td>0.67%</td>
+            <td>1.23%</td>
+            <td>-2.34%</td>
+            <td>N/A</td>
+            <td>$456,789,012</td>
+            <td>132,670,764,301 DOGE</td>
+          </tr>
+          <tr>
+            <td class="table-srno">9</td>
+            <td class="crypto-name-img"><img class="crypto-logo" src="https://s2.coinmarketcap.com/static/img/coins/64x64/2010.png" alt=""><span>Cardano (ADA)</span></td>
+            <td>$0.69</td>
+            <td>0.29%</td>
+            <td>0.56%</td>
+            <td>-1.78%</td>
+            <td>$24,634,014,136</td>
+            <td>$234,567,890</td>
+            <td>35,693,871,211 ADA</td>
+          </tr>
+          <tr>
+            <td class="table-srno">10</td>
+            <td class="crypto-name-img"><img class="crypto-logo" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1958.png" alt=""><span>TRON (TRX)</span></td>
+            <td>$0.24</td>
+            <td>0.42%</td>
+            <td>0.89%</td>
+            <td>-1.23%</td>
+            <td>$23,154,921,511</td>
+            <td>$123,456,789</td>
+            <td>96,493,787,111 TRX</td>
+          </tr>
+        </tbody>
+      </table>
+      </section>
+      <section class="Exchange main-section">
+      <h2>Exchange</h2>
+      
+      </section>
+      <section class="Convertor main-section">
+      <h2>Converter</h2>
+      
+      </section>
+      <section class="Community main-section">
+      <h2>Community</h2>
+      </section>
+
+
+  </div>
+</body>
+
+</html>
+<!-- 
+  <ul class="nav-items nav-left">
+      <li><img src="./mylogo.png" alt=""><span><h2>NIK CYRPTO</h2></span></li>
+
+      <li id="nav-pipe">|</li>
+
+      <li> <span>Home</span>
+          <span class="material-symbols-outlined left-nav-icons">home<span></span>
+      </li>
+
+      <li><span>Cryptocurrencies</span>
+          <i class="fa-solid fa-coins left-nav-icons fontawsome"></i>
+      </li>
+
+      <li>
+          <span>Exchange</span> 
+          <span class="material-symbols-outlined left-nav-icons">sync_alt<span>
+
+      <li>
+          <span>Community</span>
+          <span class="material-symbols-outlined left-nav-icons">groups<span>
+      </li>
+
+      <li>
+          <span>Converter</span>
+          <span class="material-symbols-outlined left-nav-icons">currency_exchange</span>
+      </li>
+  </ul>
+  <ul class="nav-items nav-right">
+      <li>
+          <i class="fa-regular fa-bell right-nav-icons fontawsome"></i>
+      </li>
+      <li><input id="search-box" type="search" placeholder="Search">
+          <i class="fa-solid fa-magnifying-glass fontawsome right-nav-icons"></i>
+      </li>
+
+      <li>
+          <i class="fa-brands fa-x-twitter fontawsome right-nav-icons" ></i>&nbsp;<i class="fa-brands fa-linkedin fontawsome right-nav-icons"></i>
+      </li>
+  </ul>
+
+
+
+<section class="home main-section">
+<h2>Home</h2>
+
+</section>
+<section class="Currencies main-section">
+<h2>Currencies</h2>
+<table class="currencies-table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>1h%</th>
+      <th>24h%</th>
+      <th>7d%</th>
+      <th>Market Cap</th>
+      <th>Volume</th>
+      <th>Circulating Supply</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td class="crypto-name-img"> <img class="crypto-logo" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png" alt=""><span>Bitcoin (BTC)</span></td>
+      <td>$94,766.49</td>
+      <td>0.05%</td>
+      <td>0.23%</td>
+      <td>-1.21%</td>
+      <td>$1,881,068,046,514</td>
+      <td>$23,456,789,012</td>
+      <td>19,859,837 BTC</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td class="crypto-name-img"><img class="crypto-logo" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png" alt=""><span>Ethereum (ETH)</span></td>
+      <td>$1,800.67</td>
+      <td>0.03%</td>
+      <td>0.15%</td>
+      <td>-2.34%</td>
+      <td>$217,248,182,825</td>
+      <td>$12,345,678,901</td>
+      <td>120,587,321 ETH</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td class="crypto-name-img"><img class="crypto-logo" src="https://s2.coinmarketcap.com/static/img/coins/64x64/825.png" alt=""><span>Tether (USDT)</span></td>
+      <td>$1.00</td>
+      <td>0.01%</td>
+      <td>0.01%</td>
+      <td>0.00%</td>
+      <td>$148,019,445,760</td>
+      <td>$45,678,901,234</td>
+      <td>148,019,445,760 USDT</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td class="crypto-name-img"><img class="crypto-logo" src="https://s2.coinmarketcap.com/static/img/coins/64x64/52.png" alt=""><span>XRP (XRP)</span></td>
+      <td>$2.23</td>
+      <td>0.45%</td>
+      <td>1.23%</td>
+      <td>-3.45%</td>
+      <td>$130,882,232,896</td>
+      <td>$5,678,901,234</td>
+      <td>58,693,871,211 XRP</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td class="crypto-name-img"><img class="crypto-logo" src="https://s2.coinmarketcap.com/static/img/coins/64x64/5426.png" alt=""><span>Solana (SOL)</span></td>
+      <td>$146.41</td>
+      <td>0.21%</td>
+      <td>0.56%</td>
+      <td>-2.11%</td>
+      <td>$75,951,998,926</td>
+      <td>$3,456,789,012</td>
+      <td>518,693,871 SOL</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td class="crypto-name-img"><img class="crypto-logo" src="https://s2.coinmarketcap.com/static/img/coins/64x64/3408.png" alt=""><span>USD Coin (USDC)</span></td>
+      <td>$0.99</td>
+      <td>0.01%</td>
+      <td>0.01%</td>
+      <td>0.00%</td>
+      <td>$61,742,131,269</td>
+      <td>$2,345,678,901</td>
+      <td>62,365,813,131 USDC</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td class="crypto-name-img"> <img class="crypto-logo" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1839.png" alt=""><span>Binance Coin (BNB)</span></td>
+      <td>$601.26</td>
+      <td>0.15%</td>
+      <td>0.34%</td>
+      <td>-1.56%</td>
+      <td>$84,842,324,265</td>
+      <td>$1,234,567,890</td>
+      <td>141,137,871 BNB</td>
+    </tr>
+    <tr>
+      <td >8</td>
+      <td class="crypto-name-img"><img class="crypto-logo" src="https://s2.coinmarketcap.com/static/img/coins/64x64/74.png" alt=""><span>Dogecoin (DOGE)</span></td>
+      <td>$0.15</td>
+      <td>0.67%</td>
+      <td>1.23%</td>
+      <td>-2.34%</td>
+      <td>N/A</td>
+      <td>$456,789,012</td>
+      <td>132,670,764,301 DOGE</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td class="crypto-name-img"><img class="crypto-logo" src="https://s2.coinmarketcap.com/static/img/coins/64x64/2010.png" alt=""><span>Cardano (ADA)</span></td>
+      <td>$0.69</td>
+      <td>0.29%</td>
+      <td>0.56%</td>
+      <td>-1.78%</td>
+      <td>$24,634,014,136</td>
+      <td>$234,567,890</td>
+      <td>35,693,871,211 ADA</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td class="crypto-name-img"><img class="crypto-logo" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1958.png" alt=""><span>TRON (TRX)</span></td>
+      <td>$0.24</td>
+      <td>0.42%</td>
+      <td>0.89%</td>
+      <td>-1.23%</td>
+      <td>$23,154,921,511</td>
+      <td>$123,456,789</td>
+      <td>96,493,787,111 TRX</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+<section class="Exchange main-section">
+<h2>Exchange</h2>
+
+</section>
+<section class="Convertor main-section">
+<h2>Converter</h2>
+
+</section>
+<section class="Community main-section">
+<h2>Community</h2> -->

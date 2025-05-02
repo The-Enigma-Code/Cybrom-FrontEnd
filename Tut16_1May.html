@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .navbar{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: yellow;
+            flex-wrap: wrap;
+        }
+        .navbar ul{
+            list-style: none;
+            display: flex;
+            gap:40px
+          
+        }
+        .navbar label{
+            display: none;
+        }
+        #click{
+            display: none;
+        }
+        @media screen and (max-width:650px) {
+        
+        .navbar ul{
+           display: none;          
+        }
+            .navbar label{
+                display: block;
+                
+            }
+        #click:checked~.navbar ul{
+            display: block;
+            position: absolute;
+            top:60px;
+                /* right: 2vh; */
+        }
+    }
+        /* pseudo selector: target specific element or state */
+        /* psude element--> double colon, psudo class-single colon0 */
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="click">
+    <nav class="navbar">
+        <h1>
+            Logo
+        </h1>
+        <ul>
+            <li>listItem-1</li>
+            <li>listItem-2</li>
+            <li>listItem-3</li>
+            <li>listItem-4</li>
+        </ul>
+        <label for="click">
+            <i class="fa-solid fa-bars"></i>
+            <!-- <h3>|||</h3> -->
+        </label>
+    </nav>
+</body>
+</html>
